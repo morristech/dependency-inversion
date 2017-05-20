@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.AppCompat.ButtonBar.SharedElement">
+        <item name="android:transitionName">@string/fab_shared_element_name</item>
+    </style>
+</resources>

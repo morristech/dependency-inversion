@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="dismiss"
+    tools:context="com.example.ronensabag.dependencyInversion.addNote.AddNoteActivity">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/add_note"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+
+
+        android:paddingStart="16dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="24dp"
+        android:paddingRight="24dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="16dp"
+
+        card_view:cardCornerRadius="4dp"
+        android:animateLayoutChanges="true"
+        style="@style/Widget.AppCompat.ButtonBar.SharedElement">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/add_note_title"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:padding="16dp"
+                android:textSize="24sp"
+                android:text="@string/add_note_title"/>
+
+            <EditText
+                android:id="@+id/add_note_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:maxLines="2"
+                android:hint="@string/add_note_text_hint" />
+            
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/add_note_cancel_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    style="?android:borderlessButtonStyle"
+                    android:text="@string/add_note_button_cancel"/>
+                <Button
+                    android:id="@+id/add_note_add_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    style="?android:borderlessButtonStyle"
+                    android:text="@string/add_note_button_add"/>
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

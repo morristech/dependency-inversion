@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Dependency inversion</string>
+    <string name="action_clear_notes">~Clear Notes</string>
+    <string name="title_activity_add_note">AddNoteActivity</string>
+    <string name="add_note_button_cancel">Cancel</string>
+    <string name="add_note_button_add">Add</string>
+    <string name="add_note_text_hint">write you note here</string>
+    <string name="add_note_title">Add Note</string>
+    <string name="fab_shared_element_name">FAB shared element name</string>
+</resources>
